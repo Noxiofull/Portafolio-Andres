@@ -7,5 +7,5 @@ export default defineConfig({
   plugins: [react(),
     tailwindcss()
   ],
-  base:'/Portafolio-Andres/'
+  base:'https://noxiofull.github.io/Portafolio-Andres/'
 })
