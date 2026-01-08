@@ -4,7 +4,7 @@ import { CalendarIcon } from '@heroicons/react/24/outline'
 
 export const Experiencia = () => {
   return (
-    <section className="mx-2 sm:mx-0 my-20">
+    <section id="experiencia" className="mx-2 sm:mx-0 my-20">
       <div className="w-full">
         <div>
           <h2 className="text-center text-5xl">Experiencia Laboral</h2>

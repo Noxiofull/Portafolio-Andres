@@ -2,7 +2,7 @@
 import ImgRostro from "../assets/Imagen_Andres.jpg"
 export const Presentacion = () => {
   return (
-    <section class="w-full">
+    <section  id='presentacion' class="w-full">
         <div className="  lg:px-50 md:px-30 mx-5 sm:mx-3 flex flex-wrap lg:px-25 lg:space-x-5 mt-30 lg:items-center lg:justify-between  " >
             <div className="flex-1">
                 <p className="text-lg p-2.5 bg-blue-100 rounded-full inline-block text-blue-600">Bienvenido a mi portafolio</p>

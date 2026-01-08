@@ -30,19 +30,19 @@ const Navbar = () => {
           <div class="hidden md:block flex space-x-3 md:order-2  rtl:space-x-reverse " id="menu">
             <a href="">Inicio</a>
             <a href="">Sobre mi</a>
-            <a href="">Habilidades</a>
+            <a href="#habilidades">Habilidades</a>
             <a href="">Proyectos</a>
             <a href="">Experiencia</a>
             <a href="">Contacto</a>
           </div>
         </div>
         <div className={`${isOpen ? 'block' : 'hidden'} md:hidden   left-0  w-full  bg-white/30 backdrop-blur-md   border-b border-white/30 p-4 space-y-2`}>
-          <a href="#home" onClick={() => setIsOpen(false)} className="block hover:text-blue-400  pb-2">Inicio</a>
-          <a href="#services" onClick={() => setIsOpen(false)} className="block hover:text-blue-400  pb-2">Sobre mi</a>
-          <a href="#services" onClick={() => setIsOpen(false)} className="block hover:text-blue-400  pb-2">Habilidades</a>
-          <a href="#services" onClick={() => setIsOpen(false)} className="block hover:text-blue-400  pb-2">Proyectos</a>
-          <a href="#services" onClick={() => setIsOpen(false)} className="block hover:text-blue-400  pb-2">Experiencia</a>
-          <a href="#services" onClick={() => setIsOpen(false)} className="block hover:text-blue-400  pb-2">Contacto</a>
+          <a href="#presentacion" onClick={() => setIsOpen(false)} className="block hover:text-blue-400  pb-2">Inicio</a>
+          <a href="#sobremi" onClick={() => setIsOpen(false)} className="block hover:text-blue-400  pb-2">Sobre mi</a>
+          <a href="#habilidades" onClick={() => setIsOpen(false)} className="block hover:text-blue-400  pb-2">Habilidades</a>
+          <a href="#proyectos" onClick={() => setIsOpen(false)} className="block hover:text-blue-400  pb-2">Proyectos</a>
+          <a href="#experiencia" onClick={() => setIsOpen(false)} className="block hover:text-blue-400  pb-2">Experiencia</a>
+          <a href="#contacto" onClick={() => setIsOpen(false)} className="block hover:text-blue-400  pb-2">Contacto</a>
         </div>
       </nav>
     </section>

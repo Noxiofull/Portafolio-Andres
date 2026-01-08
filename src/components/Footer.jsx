@@ -4,7 +4,7 @@ import {EnvelopeIcon} from '@heroicons/react/24/outline'
 
 export const Footer = () => {
   return (
-    <section className="bg-black text-white h-full">
+    <section id='footer' className="bg-black text-white h-full">
       <div className="mx-10 sm:flex items-start flex-col items-center sm:flex-row  justify-evenly pt-10">
         <div className="sm:w-80">
           <p className="font-bold">Portafolio</p>

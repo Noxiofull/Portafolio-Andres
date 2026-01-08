@@ -4,7 +4,7 @@ import ImgDevo from "../assets/Imagen_Desarrollo.jpeg"
 
 export const Sobremi = () => {
   return (
-    <section className="my-20 mx-1 sm:mx-0 bg-gray-50">
+    <section id='sobremi' className="my-20 mx-1 sm:mx-0 bg-gray-50">
       <div className="pt-20">
         <h2 className="text-center text-5xl">Sobre mi</h2>
         <p className="text-center text-2xl text-gray-500">Conoce mas acerca de mi trayectoria y experiencia</p>

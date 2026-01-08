@@ -1,7 +1,7 @@
 import { PaperAirplaneIcon, EnvelopeIcon, PhoneIcon, HashtagIcon } from '@heroicons/react/24/outline'
 export const Contacto = () => {
   return (
-    <section className="mx-5 sm:mx-0  sm:mx-auto sm:px-60 py-16 my-20 bg-gray-50">
+    <section id='contacto' className="mx-5 sm:mx-0  sm:mx-auto sm:px-60 py-16 my-20 bg-gray-50">
 
       <h2 className="text-center text-5xl mb-4">Contacto</h2>
       <p className="text-center text-2xl text-gray-500 mb-12">
