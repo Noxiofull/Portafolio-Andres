@@ -1,7 +1,27 @@
 import { PaperAirplaneIcon, EnvelopeIcon, PhoneIcon, HashtagIcon } from '@heroicons/react/24/outline'
+import { useForm, ValidationError } from '@formspree/react'
+import toast, { Toaster } from 'react-hot-toast';
+import { useEffect } from 'react';
+
+
+
 export const Contacto = () => {
+  const [state, handleSubmit] = useForm("mkoowglw");
+
+  useEffect(() => {
+    if (state.succeeded) {
+      toast.success('!Enviado Con Exito',
+        {
+          position: "top-center", // Aparece arriba al centro
+          className: "bg-white border-2 border-green-500",
+        }
+      );
+    }
+  }, [state.succeeded])
+
+
   return (
-    <section id='contacto' className="mx-5 sm:mx-0  sm:mx-auto sm:px-60 py-16 my-20 bg-gray-50">
+    <section id='contacto' className="px-5  sm:px-60 py-16 my-20 bg-gray-50">
 
       <h2 className="text-center text-5xl mb-4">Contacto</h2>
       <p className="text-center text-2xl text-gray-500 mb-12">
@@ -15,14 +35,20 @@ export const Contacto = () => {
         <div className="grid gap-8">
 
 
-          <form className="flex flex-col border bg-white border-gray-200 p-7 rounded-lg gap-6">
+          <form
+            action="https://formspree.io/f/mkoowglw"
+            method='POST'
+            onSubmit={handleSubmit}
+            className="flex flex-col border bg-white border-gray-200 p-7 rounded-lg gap-6">
             <input
               type="text"
               placeholder="Nombre"
+              name="name"
               className="bg-neutral-100 rounded-md border border-gray-100 p-2"
             />
             <input
               type="email"
+              name="email"
               placeholder="Email"
               className="bg-neutral-100 rounded-md border border-gray-100 p-2"
             />
@@ -30,19 +56,21 @@ export const Contacto = () => {
               type="text"
               placeholder="Asunto"
               className="bg-neutral-100 rounded-md border border-gray-100 p-2"
+              name='issue'
             />
             <textarea
               rows={4}
               className="bg-neutral-100 rounded-md border border-gray-100 p-2"
               placeholder="Tu Mensaje"
+              name="message"
             ></textarea>
 
-            <button className="bg-black text-white flex justify-center space-x-3  rounded-md p-2 mt-2">
+            <button disabled={state.submitting} type="submit" className="bg-black text-white flex justify-center space-x-3  rounded-md p-2 mt-2">
               <PaperAirplaneIcon className='w-6 h-6' />
-              <p>Enviar Mensaje</p>
+              <p>{state.submitting ? 'Enviando...' : 'Enviar mensaje'}</p>
             </button>
+            <Toaster />
           </form>
-
 
           <div className="border border-gray-200 bg-white p-7 rounded-lg space-y-6">
             <h3 className="text-2xl font-semibold">Información de contacto</h3>

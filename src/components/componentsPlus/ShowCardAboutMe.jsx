@@ -2,9 +2,9 @@ import { CardAboutMe } from "./cardAboutMe"
 import {CodeBracketIcon,UsersIcon,BookOpenIcon} from  "@heroicons/react/24/outline"
 
 const data = [
-    {text:"Proyectos Completados",icon:CodeBracketIcon,number:12},
-    {text:"Años de experiencia",icon:UsersIcon,number:12},
-    {text:"Certificaciones",icon:BookOpenIcon,number:12},
+    {text:"Proyectos Completados",icon:CodeBracketIcon,number:5},
+    {text:"Años de experiencia",icon:UsersIcon,number:1},
+    {text:"Certificaciones",icon:BookOpenIcon,number:4},
 
 ]
 
